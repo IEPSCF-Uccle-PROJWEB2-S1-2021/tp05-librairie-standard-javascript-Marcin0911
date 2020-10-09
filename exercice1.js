@@ -3,7 +3,7 @@ function chuckNorris(msg) {
     let binaryCode = "";
     let unaryCode = "";
     for(i in msg){
-    binaryCode += msg[i].charCodeAt(0).toString([2]);
+    binaryCode += msg[i].charCodeAt(0).toString([2]).padStart(7,"0");
     }
     let tableau = binaryCode.split("");
     if (tableau[0] === '1'){
@@ -34,5 +34,6 @@ function chuckNorris(msg) {
 
 console.log(chuckNorris("C"));
 console.log(chuckNorris("CC"));
+
 
 
